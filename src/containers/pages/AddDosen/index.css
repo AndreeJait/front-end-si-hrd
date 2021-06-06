@@ -1,0 +1,104 @@
+.page-add-dosen {
+    padding: 10px;
+}
+
+.navigation-add-dosen {
+    width: 100%;
+    box-shadow: 0px 0px 5px 2px rgb(224, 224, 224);
+    min-height: 500px;
+    display: flex;
+}
+
+.navigation-add-dosen>.navigation {
+    width: 200px;
+    background: #1488be;
+    color: white;
+}
+
+.navigation-add-dosen>.navigation>ul>li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navigation-add-dosen>.navigation>ul>li>.show {
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>.show {
+    color: black;
+    background-color: white;
+    border-left: 3px solid #218cb6;
+    transition: .5s;
+}
+
+.navigation-add-dosen>.navigation>ul>li>.show>#solve {
+    float: right;
+}
+
+.navigation-add-dosen>.navigation>ul>li>ul {
+    visibility: hidden;
+    padding: 0px 10px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 10px;
+    z-index: 0;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>ul {
+    visibility: visible;
+    padding: 0px 10px;
+    position: relative;
+    margin-top: 0px;
+    transition: .5s;
+}
+
+.navigation-add-dosen>.navigation>ul>li>ul>li {
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 3px 5px;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>ul>li.active {
+    background: white;
+    color: black;
+    border-radius: 0px 5px 5px 5px;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>ul>li.warning {
+    background: rgb(219, 216, 40);
+    color: rgb(255, 255, 255);
+    border-radius: 0px 5px 5px 5px;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>ul>li.failed {
+    background: rgb(219, 82, 40);
+    color: rgb(255, 255, 255);
+    border-radius: 0px 5px 5px 5px;
+}
+
+.navigation-add-dosen>.navigation>ul>li.active>ul>li.done {
+    background: rgb(40, 219, 151);
+    color: rgb(255, 255, 255);
+    border-radius: 0px 5px 5px 5px;
+}
+
+.navigation-add-dosen>.content-nav {
+    width: calc(100% - 200px);
+    padding: 10px;
+}
+
+.method-button {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.method-button>button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

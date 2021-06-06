@@ -1,0 +1,121 @@
+.page-data-diri>.flex-row {
+    display: flex;
+    gap: 40px;
+}
+
+.page-data-diri {
+    padding: 20px;
+}
+
+.page-data-diri>.flex-row>.biodata {
+    width: calc(100% -270px);
+    margin-left: 10px 20px;
+}
+
+.page-data-diri>.flex-row>.biodata>.header>.setting {
+    float: right;
+    margin-top: -25px;
+}
+
+.page-data-diri>.flex-row>.biodata>table {
+    margin-top: 20px;
+}
+
+.page-data-diri>.flex-row>.biodata>table tr>td {
+    padding: 10px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.page-data-diri>.flex-row>.biodata>table tr>td>input[readOnly] {
+    outline: none;
+    border: none;
+    min-width: 250px;
+    max-width: 300px;
+    font-size: 1em;
+}
+
+.page-data-diri>.flex-row>.profile-img {
+    width: 250px;
+}
+
+.page-data-diri>.flex-row>.profile-img>img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.page-data-diri>.flex-row>.profile-img>.change-profile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-data-diri>.flex-row>.profile-img>.change-profile>#file {
+    display: none;
+}
+
+.page-data-diri>.flex-row>.profile-img>.change-profile>#back-to-default,
+.page-data-diri>.flex-row>.profile-img>.change-profile>#change-profile {
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.page-data-diri>.flex-row>.profile-img>.setting-change-profile {
+    display: none;
+}
+
+.page-data-diri>.flex-row>.profile-img>.setting-change-profile.active {
+    display: block;
+}
+
+.page-data-diri>.flex-row>.profile-img>.setting-change-profile>.file-name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* .page-data-diri>.flex-row>.profile-img>.setting-change-profile>.btn-settings>button {
+    width: 33.3%;
+} */
+
+.page-data-diri>.flex-row>.profile-img>img {
+    width: 250px;
+    box-shadow: 0px 0px 10px 2px #bebebe;
+}
+
+.page-data-diri>.flex-row>.biodata>.setting-biodata {
+    display: none;
+}
+
+.page-data-diri>.flex-row>.biodata>.setting-biodata.active {
+    display: block;
+    margin-top: 20px;
+}
+
+.page-data-diri>.flex-row>.biodata>.setting-biodata.active>button {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.page-data-diri>.flex-row>.biodata>.setting-biodata.active>button:first-child {
+    margin-right: 20px;
+}
+
+.setting>.btn-none:last-child {
+    margin-right: 0px;
+}
+
+.btn-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-settings>button {
+    cursor: pointer;
+    width: 120px;
+    border-radius: 20px;
+    height: 30px;
+}

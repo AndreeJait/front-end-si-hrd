@@ -1,0 +1,100 @@
+.content-token {
+    padding: 10px;
+}
+
+.content-token>.header-token {
+    margin-bottom: 20px;
+}
+
+.content-token>.header-token>.token-setting {
+    display: flex;
+}
+
+.content-token>.body-token>.row-token {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.Token-Menunggu {
+    box-shadow: 0px 0px 5px 0px rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: white;
+    background-color: rgb(235, 232, 52);
+}
+
+.Token-Diterima {
+    box-shadow: 0px 0px 5px 0px rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: white;
+    background-color: rgb(52, 235, 134);
+}
+
+.Token-Ditolak {
+    box-shadow: 0px 0px 5px 0px rgb(221, 221, 221);
+    border-radius: 10px;
+    padding: 2px 5px;
+    color: white;
+    background-color: rgb(235, 52, 52);
+}
+
+.flex {
+    display: flex;
+}
+
+.content-token>.body-token>.row-token>.item-token {
+    padding: 10px 20px;
+    min-width: 400px;
+    max-width: 420px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
+.content-token>.body-token>.row-token>.item-token>.header-item {
+    margin-bottom: 10px;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-item>.details li {
+    list-style: none;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-item>.details>table>tbody>tr>td {
+    padding: 2px 5px;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer>button {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer>button.active>.before {
+    display: none;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer>button>.after {
+    display: none;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer>button.active>.after {
+    display: block;
+}
+
+.content-token>.body-token>.row-token>.item-token>.content-footer>button.active>.after>img {
+    width: 30px;
+}
+
+.token-filter {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 25px;
+}

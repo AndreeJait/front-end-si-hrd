@@ -1,14 +1,23 @@
 import { React, Component, Fragment } from 'react';
 import './App.css';
-import { BrowserRouter as Router,Route, Switch } from 'react-router-dom'
-import { changeLogin, changeNotif, getAllNotif, actiontakeAllToken, actionChangeToken} from '../../../config/redux/action'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import NavbarTop from '../../../components/atoms/NavbarTop'
 import { connect } from 'react-redux';
-import Login from '../Login';
-import channel from '../../../config/pusher';
+import { changeLogin, changeNotif, getAllNotif, actiontakeAllToken, actionChangeToken} from '../../../config/redux/action'
+import Login from '../Login'
+import Dashboard from '../Dashboard'
+import DataDiri from '../DataDiri'
 import PrivateRoute from '../../../components/molekuls/PrivateRoute'
 import RigthNavbar from '../../../components/atoms/RightNavbar'
-import Dashboard from '../Dashboard'
-import NavbarTop from '../../../components/atoms/NavbarTop'
+import NotFound from '../NotFound';
+import RequestData from '../RequestData';
+import TakeData from '../TakeData';
+import TokenData from '../TokenData';
+import SearchDosen from '../SearchDosen';
+import DataDosen from '../DataDosen';
+import AddDosen from '../AddDosen';
+import channel from '../../../config/pusher';
+import InputExcel from '../InputExcel';
 class App extends Component {
   constructor(props) {
     super(props)
@@ -79,8 +88,12 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-        <Route path='/login' exact component={(props)=><Login {...props} notifCheck={this.handleRekursifNotif} tokenCheck={this.handleTakeToken}/>}></Route>
-        <Fragment>
+          <Route path='/login' exact component={(props)=><Login {...props} notifCheck={this.handleRekursifNotif} tokenCheck={this.handleTakeToken}/>}></Route>
+          <Route path="/data/token" component={TakeData}></Route>
+          <Route path="/data" component={RequestData}></Route>
+          <Route path="/data/show" ></Route>
+          <Route path="/excel" component={InputExcel}></Route>
+          <Fragment>
             <div className="container">
               <NavbarTop></NavbarTop>
               <div className="section-flex-row">
@@ -88,6 +101,21 @@ class App extends Component {
                 <Switch>
                   <PrivateRoute exact path='/'>
                     <Dashboard></Dashboard>
+                  </PrivateRoute>
+                  <PrivateRoute path='/datadiri'>
+                    <DataDiri></DataDiri>
+                  </PrivateRoute>
+                  <PrivateRoute path='/token'>
+                    <TokenData ></TokenData>
+                  </PrivateRoute>
+                  <PrivateRoute path="/dosen/add" component={AddDosen}>
+                  </PrivateRoute>
+                  <PrivateRoute path="/dosen/:id" component={DataDosen}>
+                  </PrivateRoute>
+                  <PrivateRoute path="/dosen" component={SearchDosen}>
+                  </PrivateRoute>
+                  <PrivateRoute>
+                    <NotFound></NotFound>
                   </PrivateRoute>
                 </Switch>
               </div>

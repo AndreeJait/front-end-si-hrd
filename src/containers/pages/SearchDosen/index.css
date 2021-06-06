@@ -1,0 +1,42 @@
+.page-search-doesen {
+    padding: 20px;
+}
+
+.button-exec-search {
+    margin-top: 40px;
+}
+
+.button-exec-search>button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.click-able {
+    color: rgb(28, 18, 170);
+    cursor: pointer;
+}
+
+.click-able:hover {
+    text-decoration: underline;
+}
+
+.row-result>table th {
+    text-align: start;
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.row-result>table {
+    width: 100%;
+}
+
+.row-result>table tr {
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.row-result>table td,
+.row-result>table th {
+    padding: 5px 5px;
+    border: 1px solid rgb(56, 56, 56);
+}

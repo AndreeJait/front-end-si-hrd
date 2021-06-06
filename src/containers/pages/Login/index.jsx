@@ -53,6 +53,9 @@ class Login extends Component {
     }
   }
 
+  componentDidMount = () => {
+
+  }
   componentWillUnmount() {
     var tempForm = {
       email: "",

@@ -1,0 +1,8 @@
+.page-content>.page-not-found>img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.page-content>.page-not-found {
+    text-align: center;
+}

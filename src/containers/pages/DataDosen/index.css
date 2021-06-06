@@ -1,0 +1,125 @@
+.page-data-dosen {
+    padding: 10px;
+}
+
+.data-view-employee {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+}
+
+.data-view-employee>.side-left {
+    width: 350px;
+}
+
+.data-view-employee>.side-left>.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.data-view-employee>.side-left>.profile>h4 {
+    color: rgb(26, 114, 165);
+}
+
+.data-view-employee>.side-left>.profile>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.setting-data {
+    display: flex;
+    gap: 20px;
+}
+
+.data-view-employee>.side-left>.data-diri {
+    padding: 20px;
+}
+
+.data-view-employee>.side-left>.data-diri>.item-data-diri {
+    margin-top: 10px;
+}
+
+.data-view-employee>.side-right {
+    width: calc(100% - 370px);
+}
+
+.data-view-employee>.side-right>.section-right {
+    padding: 5px 5px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgb(233, 233, 233);
+    margin-bottom: 20px;
+}
+
+.data-view-employee>.side-right>.section-right>.header-section {
+    padding: 5px;
+    background: rgb(20, 120, 179);
+    color: white;
+}
+
+.data-view-employee>.side-right>.section-right>.content-section {
+    padding: 10px 10px;
+}
+
+.data-view-employee>.side-right>.section-right>.content-section .data-wrap {
+    margin-top: 5px;
+}
+
+.data-view-employee>.side-right>.section-right>.content-section .temp-inside {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.data-view-employee>.side-right>.section-right>.content-section .data-inside {
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgb(224, 224, 224);
+    min-width: 48%;
+}
+
+.data-view-lampiran {
+    box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+    padding: 20px;
+}
+
+.data-view-lampiran>.row-file {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.item-file {
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 0px 10px 0px rgb(233, 233, 233);
+}
+
+.item-file>img {
+    height: 200px;
+}
+
+.item-file>.file {
+    font-size: 200px;
+}
+
+.item-file>a {
+    margin-top: 30px;
+}
+
+.fa-file-pdf {
+    color: rgb(197, 59, 59);
+}
+
+.fa-file-alt {
+    color: rgb(51, 136, 216);
+}
