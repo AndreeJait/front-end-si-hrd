@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { Line } from 'react-chartjs-2';
 import './index.css'
 class Dashboard extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      data: {
+        labels: [],
+        datasets: [
+          {
+            label: "Klasifikasi Pegawai",
+            data: []
+          }
+        ]
+      },
       jabatan: []
     }
   }
@@ -23,7 +33,7 @@ class Dashboard extends Component {
         </div>
         <div className="content-dashboard">
           <div className="side-left">
-
+            <Line data={this.state.data} ></Line>
           </div>
           <div className="side-right">
             <h5>Jabatan Fungsional</h5>
