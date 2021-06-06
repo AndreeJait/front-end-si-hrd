@@ -145,19 +145,6 @@ class AddDosen extends Component {
                 show: this.menu[this.state.stage]
             })
         }
-        axios.get("https://dev.farizdotid.com/api/daerahindonesia/provinsi", {
-            cancelToken: this.source.token
-        })
-            .then(result => {
-                this.setState({
-                    provinsi: result.data.provinsi
-                })
-                this.source = axios.CancelToken.source();
-            })
-            .catch(err => {
-                console.log("Failed to take")
-            });
-
     }
     componentWillUnmount() {
         this.source.cancel()
