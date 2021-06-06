@@ -1,1 +1,1 @@
-export const APIBASE = "http://localhost:3002/";
+export const APIBASE = "https://sihrd-api.herokuapp.com/";
