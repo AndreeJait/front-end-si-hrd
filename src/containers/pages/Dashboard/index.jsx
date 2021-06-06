@@ -9,72 +9,11 @@ class Dashboard extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: {
-        labels: [],
-        datasets: [
-          {
-            label: "Klasifikasi Pegawai",
-            data: []
-          }
-        ]
-      },
-      dataFakultas: {
-        labels: [],
-        datasets: [
-          {
-            label: "Pegawai Per Fakultas",
-            data: []
-          }
-        ]
-      },
       jabatan: []
     }
   }
   componentDidMount() {
-    axios.get(APIBASE + "employees/group/klasifikasi")
-      .then(result => {
-        let data = this.state.data
-        data.labels = result.data.result.map((item) => {
-          if (item._id === "") {
-            return "Belum Diklaskifikasikan";
-          } else {
-            return item._id
-          }
-        })
-        data.datasets[0].data = result.data.result.map((item) => { return item.total })
-        console.log(data)
-        this.setState({
-          data: data
-        })
-      }).catch(err => {
-        console.log(err)
-      })
-    axios.get(APIBASE + "employees/group/fakultas")
-      .then(result => {
-        let dataFakultas = this.state.dataFakultas
-        dataFakultas.labels = result.data.result.map((item) => {
-          if (item._id === "") {
-            return "Belum Diklaskifikasikan";
-          } else {
-            return item._id
-          }
-        })
-        dataFakultas.datasets[0].data = result.data.result.map((item) => { return item.total })
-        this.setState({
-          dataFakultas: dataFakultas
-        })
-      }).catch(err => {
-        console.log(err)
-      })
-    axios.get(APIBASE + "employees/jabatan/functional/active")
-      .then(result => {
-        this.setState({
-          jabatan: result.data.result
-        })
-        console.log(result.data)
-      }).catch(err => {
-        console.log(err)
-      })
+ 
   }
   render() {
     return (
@@ -87,12 +26,6 @@ class Dashboard extends Component {
         </div>
         <div className="content-dashboard">
           <div className="side-left">
-            {this.state.data.labels.length !== 0 && (
-              <Line data={this.state.data}></Line>
-            )}
-            {this.state.dataFakultas.labels.length !== 0 && (
-              <Line data={this.state.dataFakultas}></Line>
-            )}
 
           </div>
           <div className="side-right">
