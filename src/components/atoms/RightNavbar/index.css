@@ -1,0 +1,167 @@
+.navbar-right {
+    transition: .5s;
+    width: 250px;
+    background: #3a3a3a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    flex-grow: 0;
+}
+
+.navbar-right>ul {
+    margin-top: 20px;
+}
+
+
+/* Navbar Normal */
+
+.navbar-right>ul>li {
+    min-height: 40px;
+    list-style: none;
+}
+
+.navbar-right>ul>li>div.link {
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    transition: .5s;
+}
+
+.navbar-right>ul>li>div.link.active,
+.navbar-right>ul>li>div.link:hover {
+    font-size: 1.1em;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.navbar-right>ul>li>div.link.clicked~.dropdown-item {
+    position: relative;
+    background-color: #585858;
+    color: white;
+    visibility: visible;
+    transition: .5s;
+    padding: 5px;
+}
+
+.navbar-right>ul>li>.dropdown-item {
+    visibility: hidden;
+    position: absolute;
+}
+
+.navbar-right>ul>li>.dropdown-item>ul>li {
+    padding: 5px;
+    cursor: pointer;
+    list-style: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.navbar-right>ul>li>.dropdown-item>ul>li.active-dropdown,
+.navbar-right>ul>li>.dropdown-item>ul>li:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Navbar Expand */
+
+.navbar-right.active {
+    width: 50px;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.navbar-right.active>ul>li {
+    height: 40px;
+}
+
+.navbar-right.active>ul>li>div.link {
+    width: 350px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.navbar-right.active>ul>li>div.link>i {
+    font-size: 1.1em;
+    margin-left: 5px;
+    margin-right: 14px;
+    color: white;
+}
+
+.navbar-right.active>ul>li>div.link.active>i {
+    color: black;
+}
+
+.navbar-right.active>ul>li>div.link.active {
+    background: white;
+}
+
+.navbar-right.active>ul>li>div.link>span {
+    font-size: 1.1em;
+}
+
+.navbar-right.active>ul>li:hover>div.link>i {
+    color: black;
+}
+
+.navbar-right.active>ul>li:hover>div.link {
+    width: 250px;
+    position: absolute;
+    background: white;
+    color: black;
+    box-shadow: 1px 0px 4px 0px #d4d4d4;
+    transition: .5s;
+}
+
+.navbar-right.active>ul>li:hover>div.dropdown-item {
+    width: 200px;
+    display: block;
+    position: absolute;
+    background: rgb(46, 46, 46);
+    padding: 2px;
+    box-shadow: 1px 0px 4px 0px #d4d4d4;
+    margin-top: 32px;
+    margin-left: 50px;
+    color: white;
+    visibility: visible;
+}
+
+.navbar-right.active>ul>li>div.dropdown-item {
+    display: none;
+}
+
+.navbar-right.active>ul>li>div.dropdown-item>ul>li {
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 0.7em;
+}
+
+.navbar-right.active>ul>li>div.dropdown-item>ul>li:hover,
+.navbar-right.active>ul>li>div.dropdown-item>ul>li.active-dropdown {
+    background: white;
+    color: rgb(0, 0, 0);
+}

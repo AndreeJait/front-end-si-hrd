@@ -1,0 +1,11 @@
+.about-method ol {
+    margin-left: 20px;
+}
+
+.about-method ul {
+    margin-left: 20px;
+}
+
+.content-li>p {
+    text-align: justify;
+}

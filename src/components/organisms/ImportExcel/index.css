@@ -1,0 +1,83 @@
+.import-excel {
+    text-align: center;
+}
+
+.import-excel>.input-file-excel {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.import-excel>.input-file-excel>label {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.import-excel>.input-file-excel>.input-file-custom {
+    width: 350px;
+}
+
+.input-file-custom {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.input-file-custom>label {
+    padding: 5px 5px;
+    border-bottom: 2px solid #2b92a0;
+    width: 60%;
+}
+
+.input-file-custom>button {
+    padding: 5px 10px;
+    background: #1d94cc;
+    color: white;
+    border-radius: 10px;
+}
+
+.input-file-custom>input[type="file"] {
+    display: none;
+}
+
+.task-list {
+    display: none;
+    margin-top: 20px;
+}
+
+.task-list.active {
+    display: block;
+}
+
+.task-list>img {
+    width: 100px;
+}
+
+#error-upload {
+    display: none;
+}
+
+.task-list li {
+    list-style: none;
+}
+
+#error-upload.active {
+    display: block;
+    margin-top: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+#succes-upload {
+    display: none;
+}
+
+#succes-upload.active {
+    display: block;
+    margin-top: 30px;
+    color: rgb(74, 197, 146);
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+.input-group {
+    width: 100%;
+    border-bottom: 2px solid #459063;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.error>.input-group {
+    border-bottom: 2px solid #EB1616;
+}
+
+.input-group>label {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.input-group>label.active {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    visibility: initial;
+    display: block;
+    opacity: 1;
+}
+
+.input-group>input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+p.msg-error {
+    display: none;
+}
+
+div.error>.msg-error {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 14px;
+    color: #EB1616;
+    margin-bottom: 5px;
+}

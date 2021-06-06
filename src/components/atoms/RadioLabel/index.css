@@ -1,0 +1,9 @@
+.radio-choice {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.radio-label {
+    margin-top: 10px;
+}

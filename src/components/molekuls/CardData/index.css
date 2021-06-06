@@ -1,0 +1,14 @@
+.card-data {
+    background-color: #F2F2F2;
+    padding: 20px;
+    width: 400px;
+}
+
+.card-data>.header-card {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-data>.header-card>button {
+    border-radius: 10px;
+}

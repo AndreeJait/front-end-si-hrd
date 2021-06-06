@@ -1,0 +1,31 @@
+.box-login {
+    width: 368px;
+    padding: 20px 35px;
+    margin: auto;
+    margin-top: 15vh;
+    min-height: 418px;
+    /* border: 2px solid green; */
+    box-shadow: 0px 2px 2px 1px rgb(216, 216, 216);
+}
+
+.box-login>.login-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-login>.login-logo>img {
+    width: 30%;
+}
+
+.p-error {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: red;
+}
+
+.box-login .setting {
+    margin-top: 20px;
+}

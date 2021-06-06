@@ -1,0 +1,138 @@
+.navbar-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #60E0A3;
+    height: 50px;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.navbar-top>a.navbar-brand {
+    width: 250px;
+    transition: .5s;
+}
+
+.navbar-top>.navbar-btn {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.navbar-top>a.navbar-brand.active {
+    width: 50px;
+}
+
+.navbar-top>a>img {
+    width: 250px;
+    margin-top: 0px;
+    height: 53px;
+    margin-top: 5px;
+    transition: .5s;
+}
+
+.navbar-top>a.navbar-brand.active>img {
+    width: 50px;
+    margin-top: 0px;
+    height: 53px;
+    margin-top: 5px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.navbar-top>.navbar-item {
+    display: flex;
+    align-items: inherit;
+    flex-wrap: wrap;
+}
+
+.navbar-top>.navbar-item>li {
+    list-style: none;
+}
+
+.navbar-top>.navbar-item.ml-auto>li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.navbar-top>.navbar-item.ml-auto>li>a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-top>.navbar-item.ml-auto>li>a:hover,
+.navbar-top>.navbar-item.ml-auto>li>a.active {
+    background: rgb(65, 167, 136);
+}
+
+.navbar-top .dropdown-item {
+    display: none;
+    opacity: 1;
+}
+
+.navbar-top .dropdown-item.active {
+    display: block;
+    position: absolute;
+    width: 250px;
+    background: white;
+    box-shadow: 0px 2px 1px 1px rgb(233, 233, 233);
+}
+
+.navbar-top .user-pop {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top .user-pop>img {
+    height: 30px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+
+.navbar-top #pop-profile>.user-bio {
+    background-color: rgb(75, 192, 157);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar-top #pop-profile>.user-bio>img {
+    width: 40px;
+}
+
+.navbar-top #pop-profile>.user-setting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#notifikasi {
+    max-height: 500px;
+    overflow-y: auto;
+    width: 300px;
+}
+
+#notifikasi>ul>li {
+    padding: 5px 5px;
+}
+
+.read-notif>small {
+    display: block;
+}
+
+.read-notif>img {
+    display: none;
+}
+
+.read-notif.active>img {
+    display: block;
+}
+
+.read-notif.active>small {
+    display: none;
+}

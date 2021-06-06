@@ -1,0 +1,36 @@
+.input-label {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-label>input {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background: none;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.error-msg {
+    display: none;
+}
+
+.error-msg.active {
+    display: block;
+    color: red;
+    font-style: italic;
+}
+
+.input-label>input.error {
+    border-color: rgb(190, 6, 6);
+}
+
+.input-label>input.success {
+    border-color: rgb(19, 167, 110);
+}
+
+.input-label>input:focus {
+    outline-color: rgb(59, 158, 224);
+}

@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+* {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 72px;
+    word-spacing: 16;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 61px;
+    word-spacing: 16;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    word-spacing: 16;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 44px;
+    word-spacing: 16;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38px;
+    word-spacing: 16;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 29px;
+    word-spacing: 16;
+}
+
+.p-3 {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    min-width: 500px;
+    box-shadow: 0px 0px 10px 2px rgb(240, 240, 240);
+}
+
+hr.green {
+    margin-top: 10px;
+    border: none;
+    height: 1px;
+    background-color: #CDCDCD;
+}
+
+.btn.w-100 {
+    width: 100%;
+}
+
+.btn {
+    padding: 5px 5px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 5px 10px;
+    line-height: 14px;
+    box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 25%);
+}
+
+.btn.btn-configure {
+    background-color: rgb(157, 92, 218);
+    color: white;
+}
+
+.btn-none {
+    margin-right: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-none>i {
+    margin-left: 2px;
+    text-align: center;
+}
+
+.btn-none.active {
+    color: white;
+    background: rgb(30, 168, 65);
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+a.btn {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.btn.btn-success {
+    color: white;
+    background-color: #2ECC71;
+}
+
+.btn.btn-primary {
+    color: white;
+    background-color: rgb(77, 129, 226);
+}
+
+.btn.btn-primary:active {
+    color: white;
+    background-color: rgb(64, 107, 187);
+}
+
+.btn.btn-disabled {
+    cursor: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A7A7A7;
+}
+
+.btn.btn-danger {
+    color: white;
+    background-color: #cc2e50;
+}
+
+.btn.btn-warning {
+    color: white;
+    background-color: #e0dd01;
+}
+
+.btn.btn-warning:active {
+    background-color: #c9c60a;
+}
+
+.btn.btn-success:active {
+    background-color: #229451;
+}
+
+.btn.btn.btn-danger:active {
+    background-color: #9e253f;
+}
+
+.font-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.section-flex-row {
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+}
+
+.page-content {
+    flex: 1;
+}
+
+.locations {
+    width: 100%;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 1px 0px #dadada;
+}
+
+.locations>ul>li {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+}
+
+.locations>ul>li>a {
+    color: rgb(45, 85, 158);
+    text-decoration: none;
+}
+
+.locations>ul>li::after {
+    content: "/";
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 1.3em;
+}
+
+.locations>ul>li:last-child::after {
+    content: "";
+}
+
+.input-edit {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+.link {
+    color: rgb(57, 101, 197);
+    text-decoration: none;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.page-80vh {
+    min-height: 90vh;
+    overflow-y: auto;
+    margin-top: 5vh;
+}
+
+.form-vertical>.form-input {
+    width: 100%;
+    /* padding: 5px 20px; */
+    margin-top: 10px;
+}
+
+.button-rounded {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-vertical>.form-input>input {
+    width: 100%;
+    background: white;
+    border: none;
+    color: black;
+    height: 25px;
+    padding: 5px;
+    /* outline: 1px solid #229451; */
+}
+
+.form-vertical>.form-input>input:focus {
+    outline: 2px solid #3e8ce6;
+    margin-top: 5px;
+}
+
+.card-data {
+    width: 500px;
+    /* box-shadow: 0px 0px 5px 0px rgb(212, 212, 212); */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-data>.item-card-data {
+    display: flex;
+    padding: 5px 0px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.card-data>.item-card-data>.initial {
+    width: 200px;
+}
+
+.card-data>.item-card-data>.initial>p {
+    font-weight: bolder;
+}
+
+.card-data>.item-card-data>.value {
+    width: calc(100% - 200px);
+}
+
+.random-color-1 {
+    background-color: #708090;
+    color: white;
+}
+
+.random-color-2 {
+    background-color: #2D9CDB;
+    color: white;
+}
+
+.random-color-3 {
+    background-color: #43B8C8;
+    color: white;
+}
+
+.random-color-4 {
+    background-color: #37C299;
+    color: white;
+}
+
+.random-color-5 {
+    background-color: #2F4F4F;
+    color: white;
+}
+
+.random-color-6 {
+    background-color: #663399;
+    color: white;
+}
+
+.border-bottom {
+    border-bottom: 2px solid white;
+}
+
+.card-rectangel {
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-rectangel>.card-footer {
+    margin-top: 5px;
+    display: flex;
+}
+
+.paginate {
+    margin-top: 40px;
+}
+
+.paginate>ul {
+    margin: auto;
+    width: max-content;
+    max-width: 300px;
+    display: flex;
+    gap: 5px;
+}
+
+.paginate>ul>li {
+    transition: .5s;
+    padding: 5px 10px;
+    background: rgb(46, 123, 187);
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(218, 218, 218);
+}
+
+.paginate>ul>li.active {
+    transition: .5s;
+    color: black;
+    background-color: white;
+}
+
+.data-row {
+    display: flex;
+    gap: 8%;
+    flex-wrap: wrap;
+}
+
+.data-row>.item-row {
+    width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+    .data-row {
+        flex-direction: column;
+    }
+    .data-row>.item-row {
+        width: 100%;
+    }
+}

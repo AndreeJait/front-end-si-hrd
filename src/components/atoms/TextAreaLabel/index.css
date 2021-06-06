@@ -1,0 +1,35 @@
+.text-area-label {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.text-area-label>textarea {
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.error-msg {
+    display: none;
+}
+
+.error-msg.active {
+    display: block;
+    color: red;
+    font-style: italic;
+}
+
+.text-area-label>textarea.error {
+    border-color: rgb(190, 6, 6);
+}
+
+.text-area-label>textarea.success {
+    border-color: rgb(19, 167, 110);
+}
+
+.text-area-label>textarea:focus {
+    outline-color: rgb(59, 158, 224);
+}
