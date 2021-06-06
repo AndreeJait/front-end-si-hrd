@@ -1,0 +1,1 @@
+export const APIBASE = "https://sihrd-api.herokuapp.com/";
