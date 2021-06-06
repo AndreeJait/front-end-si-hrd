@@ -1,10 +1,14 @@
-import { React, Component } from 'react';
+import { React, Component, Fragment } from 'react';
 import './App.css';
 import { BrowserRouter as Router,Route, Switch } from 'react-router-dom'
 import { changeLogin, changeNotif, getAllNotif, actiontakeAllToken, actionChangeToken} from '../../../config/redux/action'
 import { connect } from 'react-redux';
 import Login from '../Login';
 import channel from '../../../config/pusher';
+import PrivateRoute from '../../../components/molekuls/PrivateRoute'
+import RigthNavbar from '../../../components/atoms/RightNavbar'
+import Dashboard from '../Dashboard'
+import NavbarTop from '../../../components/atoms/NavbarTop'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -76,6 +80,19 @@ class App extends Component {
       <Router>
         <Switch>
         <Route path='/login' exact component={(props)=><Login {...props} notifCheck={this.handleRekursifNotif} tokenCheck={this.handleTakeToken}/>}></Route>
+        <Fragment>
+            <div className="container">
+              <NavbarTop></NavbarTop>
+              <div className="section-flex-row">
+                <RigthNavbar></RigthNavbar>
+                <Switch>
+                  <PrivateRoute exact path='/'>
+                    <Dashboard></Dashboard>
+                  </PrivateRoute>
+                </Switch>
+              </div>
+            </div>
+          </Fragment>
         </Switch>
       </Router>
     )
