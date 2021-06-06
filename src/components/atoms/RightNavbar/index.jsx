@@ -9,10 +9,10 @@ function RightNavbar(props) {
     const history = useHistory();
     const [navbarItem] = useState([
         ["no", "fas fa-tachometer-alt", "Dashboard", "/"],
-        ["yes", "fas fa-chalkboard-teacher", "Data Dosen", "target-1",
+        ["yes", "fas fa-chalkboard-teacher", "Data Pegawai", "target-1",
             [
-                ["fas fa-plus-square", "Tambahkan Dosen Baru", "/dosen/add"],
-                ["fas fa-search", "Cari Data Dosen", "/dosen"]
+                ["fas fa-plus-square", "Tambahkan Pegawai", "/dosen/add"],
+                ["fas fa-search", "Cari Data Pegawai", "/dosen"]
             ]
         ],
         ["no", "fas fa-laptop-code", "Token", "/token"],
@@ -20,10 +20,10 @@ function RightNavbar(props) {
     ]);
     const [navbarAdminItem] = useState([
         ["no", "fas fa-tachometer-alt", "Dashboard", "/"],
-        ["yes", "fas fa-chalkboard-teacher", "Data Dosen", "target-1",
+        ["yes", "fas fa-chalkboard-teacher", "Data Pegawai", "target-1",
             [
-                ["fas fa-plus-square", "Tambahkan Dosen Baru", "/dosen/add"],
-                ["fas fa-search", "Cari Data Dosen", "/dosen"]
+                ["fas fa-plus-square", "Tambahkan Pegawai", "/dosen/add"],
+                ["fas fa-search", "Cari Data Pegawai", "/dosen"]
             ]
         ],
         ["no", "fas fa-laptop-code", "Token", "/token"],

@@ -34,9 +34,9 @@ export const changeExpandNavbar = (condition) => {
 }
 export const actionGetJabatanActive = () => (dispatch) => {
     return new Promise((resolve, reject) => {
-        Axios.get("dosen/jabatan/active", {})
+        Axios.get("/employees/jabatan/functional/active", {})
             .then(result => {
-                resolve(result.data.data)
+                resolve(result.data.result)
             })
             .catch(err => {
                 reject([])
@@ -556,3 +556,149 @@ export const actionGetAllUsers=()=>(dispatch)=>{
         })
     })
 }
+
+export const actionSetPasswordDefault=(data, cancelToken)=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        dispatch({ type: "CHANGE_LOADING", value: true })
+        Axios.put("/users/password/default",data,{
+            cancelToken: cancelToken,
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            resolve(result.data)
+        }).catch(err=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            reject(false)
+        })
+    })
+}
+
+export const actionPasswordChange=(data, cancelToken)=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        dispatch({ type: "CHANGE_LOADING", value: true })
+        Axios.put("/users/password/change",data,{
+            cancelToken: cancelToken,
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            resolve(result.data)
+        }).catch(err=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            reject(false)
+        })
+    })
+}
+export const actionAddUsers=(data, cancelToken)=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        dispatch({ type: "CHANGE_LOADING", value: true })
+        Axios.post("/users/add",data,{
+            cancelToken: cancelToken,
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            resolve(result.data)
+        }).catch(err=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            reject(false)
+        })
+    })
+}
+export const actionDeleteUsers=(id, cancelToken)=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        dispatch({ type: "CHANGE_LOADING", value: true })
+        Axios.delete("/users/" + id,{
+            cancelToken: cancelToken,
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            resolve(result.data)
+        }).catch(err=>{
+            dispatch({ type: "CHANGE_LOADING", value: false })
+            reject(false)
+        })
+    })
+}
+export const actionGetKlasifikasi=()=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        Axios.get("/employees/group/klasifikasi",{
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            resolve(result.data.result)
+        }).catch(err=>{
+            reject(false)
+        })
+    })
+}
+export const actionGetFakultas=()=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        Axios.get("/employees/group/fakultas",{
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            resolve(result.data.result)
+        }).catch(err=>{
+            reject(false)
+        })
+    })
+}
+export const actionGetPendidikan=()=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        Axios.get("/employees/group/pendidikan",{
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            resolve(result.data.result)
+        }).catch(err=>{
+            reject(false)
+        })
+    })
+}
+export const actionGetProdi=(fakultas)=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        Axios.get("/employees/group/prodi/" + fakultas,{
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            resolve(result.data.result)
+        }).catch(err=>{
+            reject(false)
+        })
+    })
+}
+export const actionGetActive=()=>(dispatch)=>{
+    return new Promise((resolve, reject)=>{
+        Axios.get("/employees/group/active",{
+            headers: {
+                'Authorization': "Bearer " + JSON.parse(localStorage.getItem("isLogin")).token
+            }
+        })
+        .then(result=>{
+            resolve(result.data)
+        }).catch(err=>{
+            reject(false)
+        })
+    })
+}
+
+

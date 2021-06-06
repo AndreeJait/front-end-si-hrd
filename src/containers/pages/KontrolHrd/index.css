@@ -1,0 +1,72 @@
+.kontrol-hrd {
+    padding: 10px;
+}
+
+.kontrol-hrd>.table-hrd {
+    overflow: hidden;
+}
+
+.kontrol-hrd>.table-hrd th {
+    background: rgb(110, 110, 110);
+    color: white;
+    padding: 10px;
+}
+
+.kontrol-hrd>.table-hrd td {
+    max-width: 160px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.kontrol-hrd>.table-hrd td.column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.kontrol-hrd .modal-box-v2.active {
+    display: block;
+    width: 400px;
+    min-height: 200px;
+    box-shadow: 0px 0px 10px 0px rgb(207, 207, 207);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.kontrol-hrd .modal-box-v2 {
+    display: none;
+}
+
+.kontrol-hrd .modal-box-v2.active>.header {
+    background: rgb(42, 201, 134);
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.kontrol-hrd .modal-box-v2.active>.content {
+    padding: 5px;
+}
+
+.kontrol-hrd .modal-box-v2.active>.footer {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.kontrol-hrd>.table-hrd td img {
+    width: 100px;
+}
+
+.file-label {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}

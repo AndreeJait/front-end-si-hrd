@@ -18,6 +18,7 @@ import DataDosen from '../DataDosen';
 import AddDosen from '../AddDosen';
 import channel from '../../../config/pusher';
 import InputExcel from '../InputExcel';
+import KontrolHrd from '../KontrolHrd';
 class App extends Component {
   constructor(props) {
     super(props)
@@ -112,6 +113,7 @@ class App extends Component {
                   </PrivateRoute>
                   <PrivateRoute path="/dosen/:id" component={DataDosen}>
                   </PrivateRoute>
+                  <PrivateRoute path="/hrd" component={KontrolHrd}/>
                   <PrivateRoute path="/dosen" component={SearchDosen}>
                   </PrivateRoute>
                   <PrivateRoute>
