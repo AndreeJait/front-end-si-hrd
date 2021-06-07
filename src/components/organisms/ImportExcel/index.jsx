@@ -4,6 +4,7 @@ import './index.css';
 import loading from '../../../assets/img/icon/loading-button.gif';
 import { connect } from 'react-redux';
 import { actionaddDataPegawaiAPI } from '../../../config/redux/action';
+import excel from '../../../assets/docs/data_input_example.xlsx'
 import axios from 'axios';
 
 const ImportExcel = (props) => {
@@ -116,7 +117,7 @@ const ImportExcel = (props) => {
     return (
         <div className="import-excel">
             <h5>Tambahkan Data Pegawai Baru dengan Excel</h5>
-            <small>Anda dapat mengunduh format excel <a href="/">Disini</a> </small>
+            <small>Anda dapat mengunduh format excel  <a rel="noreferrer" target="_blank" href={excel}> Disini</a></small>
             <div className="input-file-excel">
                 <label htmlFor="">Pilih file anda</label>
                 <div className="input-file-custom">
